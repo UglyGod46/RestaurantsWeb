@@ -1,10 +1,22 @@
 {
-  "name": "RestorantWEB",
+  "name": "restorantweb",
   "version": "1.0.0",
-  "description": "",
-  "main": "JavaScript/index.js",
+  "main": "JavaScript/validation.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node /home/uglygod46/WebstormProjects/RestorantWEB/JavaScript/index.js",
+    "dev": "nodemon /home/uglygod46/WebstormProjects/RestorantWEB/JavaScript/index.js"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "express": "^4.21.2",
+    "pg": "^8.14.1",
+    "postgres": "^3.4.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }

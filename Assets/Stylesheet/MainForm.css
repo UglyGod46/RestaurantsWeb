@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Используем min-height вместо height */
+    display: flex;
+    flex-direction: column; /* Добавляем flex-direction для корректного отображения контента */
+    background-image: url('/Assets/Images/background1 (1).png'); /* Убедитесь, что путь правильный */
+    background-size: cover; /* Масштабирование изображения на весь экран */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Запрет повторения изображения */
+    background-attachment: fixed; /* Фиксация фона при прокрутке */
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navigation-menu {
+    background-color: #333;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation-menu ul li {
+    margin: 0 5px;
+}
+
+.navigation-menu ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-menu ul li a:hover {
+    background-color: #555;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 100%;
+    color: white;
+    background: #333;
+    height: 38px;
+    width: 100%;
+    border: none;
+    padding: 10px 15px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+#another button {
+    display: none;
+}
+
+#another:hover button {
+    display: block;
+}
