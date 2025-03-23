@@ -1,10 +1,10 @@
 {
   "name": "restorantweb",
   "version": "1.0.0",
-  "main": "JavaScript/validation.js",
+  "main": "public/JavaScript/validation.js",
   "scripts": {
-    "start": "node /home/uglygod46/WebstormProjects/RestorantWEB/JavaScript/index.js",
-    "dev": "nodemon /home/uglygod46/WebstormProjects/RestorantWEB/JavaScript/index.js"
+    "start": "node /home/uglygod46/WebstormProjects/RestorantWEB/server/index.js",
+    "dev": "nodemon /home/uglygod46/WebstormProjects/RestorantWEB/server/index.js"
   },
   "private": true,
   "dependencies": {

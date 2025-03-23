@@ -1,4 +1,4 @@
-const db = require('../JavaScript/db')
+const db = require('../db')
 
 class UserController {
     async createUser(req, res) {
@@ -16,10 +16,14 @@ class UserController {
         res.json(user.rows)
     }
     async updateUser(req, res) {
-
+        const {id, username, password, role} = req.body
+        const user = await db.query('update users set username=$1, password=$2, role=$3 where id=$4 RETURNING *', [username, password, role, id])
+        res.json(user.rows)
     }
     async deleteUser(req, res) {
-
+        const id = req.params.id
+        const user = await db.query('delete from users where id = $1', [id])
+        res.json(user.rows)
     }
 }
 

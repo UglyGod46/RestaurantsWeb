@@ -5,7 +5,7 @@ body {
     min-height: 100vh; /* Используем min-height вместо height */
     display: flex;
     flex-direction: column; /* Добавляем flex-direction для корректного отображения контента */
-    background-image: url('/Assets/Images/background1 (1).png'); /* Убедитесь, что путь правильный */
+    background-image: url('/public/Assets/Images/background1 (1).png'); /* Убедитесь, что путь правильный */
     background-size: cover; /* Масштабирование изображения на весь экран */
     background-position: center; /* Центрирование изображения */
     background-repeat: no-repeat; /* Запрет повторения изображения */
